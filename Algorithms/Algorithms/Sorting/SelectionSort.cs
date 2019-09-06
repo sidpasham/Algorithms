@@ -8,5 +8,6 @@ namespace Algorithms.Sorting
 {
     class SelectionSort
     {
+
     }
 }
