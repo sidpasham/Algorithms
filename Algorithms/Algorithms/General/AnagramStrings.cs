@@ -8,9 +8,9 @@ namespace Algorithms.General
 {
     class AnagramStrings
     {
-        static void Main()
-        {
-        }
+        //static void Main()
+        //{
+        //}
 
 
     }
