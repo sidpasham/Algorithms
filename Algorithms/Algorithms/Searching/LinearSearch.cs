@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Algorithms.Searching
+﻿namespace Algorithms.Searching
 {
     class LinearSearch
     {

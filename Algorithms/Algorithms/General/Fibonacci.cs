@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.General
 {
@@ -20,6 +16,8 @@ namespace Algorithms.General
         //    Console.ReadKey();
         //}
 
+        //Time Complexity:O(n)
+        //Extra Space: O(1)
         static int FibonacciIterative(int n)
         {
             int a = 0;
@@ -35,12 +33,24 @@ namespace Algorithms.General
             return a;
         }
 
+        //Time Complexity:O(n)
+        //Extra Space: O(n)
         static int FibonacciRecursive(int n)
         {
-            if(n == 0) return 0;
-            if(n == 1) return 1;
-
+            if (n <= 1)
+            {
+                return n;
+            }
             return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
+        }
+
+        //Time Complexity: O(1)
+        //Space Complexity: O(1)
+        static int FibonacciFormula(int n)
+        {
+            double phi = (1 + Math.Sqrt(5)) / 2;
+            return (int)Math.Round(Math.Pow(phi, n)
+                                   / Math.Sqrt(5));
         }
     }
 }

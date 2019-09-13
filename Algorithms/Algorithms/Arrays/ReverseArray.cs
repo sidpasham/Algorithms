@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.Arrays
 {
@@ -10,11 +6,12 @@ namespace Algorithms.Arrays
     {
         //static void Main()
         //{
-        //    int[] arr1 = {1, 2, 3, 4, 5};
+        //    int[] arr1 = { 1, 2, 3, 4, 5 };
         //    int[] arr2 = { 1, 2, 3, 4, 5 };
-        //    var output1 = ReverseArrayIterative(arr1);
-        //    var output2 = ReverseArrayRecursive(arr2, 0, arr2.Length -1);
-        //    Console.WriteLine(string.Join("\t",output1));
+        //    //var output1 = ReverseArrayIterative(arr1);
+        //    var output1 = ReverseArrayIterative2(arr1);
+        //    var output2 = ReverseArrayRecursive(arr2, 0, arr2.Length - 1);
+        //    Console.WriteLine(string.Join("\t", output1));
         //    Console.WriteLine(string.Join("\t", output2));
         //}
 
@@ -34,6 +31,19 @@ namespace Algorithms.Arrays
             }
 
             return arr;
+        }
+
+        static int[] ReverseArrayIterative2(int[] arr)
+        {
+            var arr2 = new int[arr.Length];
+            Array.Copy(arr, arr2, arr.Length);
+            for (int i = 0, j = arr.Length - 1; i < arr.Length / 2; i++, j--)
+            {
+                arr2[i] = arr[j];
+                arr2[j] = arr[i];
+            }
+
+            return arr2;
         }
 
         static int[] ReverseArrayRecursive(int[] arr, int start, int end)

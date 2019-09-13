@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace Algorithms.Strings
 {
     class ReplaceBlackValueinString
     {
-        static void Main()
-        {
-            var str = "Mr John Smith   ";
-            var output = ReplaceBlankwithValue(str.Trim());
-        }
+        //static void Main()
+        //{
+        //    var str = "Mr John Smith   ";
+        //    var output = ReplaceBlankwithValue(str.Trim());
+        //}
 
         static string ReplaceBlankwithValue(string str)
         {

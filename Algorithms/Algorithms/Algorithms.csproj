@@ -49,14 +49,20 @@
     <Compile Include="Arrays\MinDiffinArray.cs" />
     <Compile Include="Arrays\ReverseArray.cs" />
     <Compile Include="Arrays\SecondLargestNumArray.cs" />
-    <Compile Include="General\AnagramStrings.cs" />
+    <Compile Include="General\BalancedBrackets.cs" />
+    <Compile Include="General\Factorial.cs" />
     <Compile Include="General\Fibonacci.cs" />
+    <Compile Include="General\GCD.cs" />
+    <Compile Include="General\Palindrome.cs" />
+    <Compile Include="General\PrimeNumber.cs" />
     <Compile Include="Searching\BinarySearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\LinearSearch.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Strings\CheckStringPermutation.cs" />
     <Compile Include="Strings\ReplaceBlackValueinString.cs" />
+    <Compile Include="Strings\ReverseString.cs" />
+    <Compile Include="Strings\ReverseWords.cs" />
     <Compile Include="Strings\UniqueCharsinString.cs" />
   </ItemGroup>
   <ItemGroup>
