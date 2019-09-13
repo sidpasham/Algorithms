@@ -55,6 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\LinearSearch.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
+    <Compile Include="Strings\CheckStringPermutation.cs" />
+    <Compile Include="Strings\ReplaceBlackValueinString.cs" />
+    <Compile Include="Strings\UniqueCharsinString.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
