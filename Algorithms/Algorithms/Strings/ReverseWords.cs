@@ -9,12 +9,12 @@ namespace Algorithms.Strings
 {
     class ReverseWords
     {
-        static void Main()
-        {
-            string str = "Hello this is Siddhanth";
-            var output = ReverseWordsinString(str);
-            Console.WriteLine(output);
-        }
+        //static void Main()
+        //{
+        //    string str = "Hello this is Siddhanth";
+        //    var output = ReverseWordsinString(str);
+        //    Console.WriteLine(output);
+        //}
 
         static string ReverseWordsinString(string str)
         {

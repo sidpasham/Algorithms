@@ -28,8 +28,8 @@ namespace Algorithms.General
         //Time Complexity: O(Log min(a, b))
         static double GCDEuclideanRecursive(int a, int b)
         {
-            if (b == 0) return a;
-            return GCDEuclideanRecursive(b, a % b);
+            if (a == 0) return b;
+            return GCDEuclideanRecursive(b % a, a);
         }
     }
 }

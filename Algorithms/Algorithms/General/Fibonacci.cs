@@ -11,37 +11,40 @@ namespace Algorithms.General
 
         //    for (int i = 0; i < length; i++)
         //    {
-        //        Console.Write("{0} ", FibonacciIterative(i));
+        //        Console.Write("{0} ", FibonacciFormula(i));
         //    }
-        //    Console.ReadKey();
+        //    Console.WriteLine($"The Nth Fibonacci = {FibonacciFormula(length)}");
+        //    Console.ReadLine();
         //}
 
         //Time Complexity:O(n)
         //Extra Space: O(1)
-        static int FibonacciIterative(int n)
+        static int NthFibonacciIterative(int n)
         {
             int a = 0;
             int b = 1;
 
-            for (int i = 0; i < n; i++)
+            if (n == 0) return a;
+
+            for (int i = 2; i <= n; i++)
             {
                 var temp = a;
                 a = b;
                 b = temp + b;
             }
 
-            return a;
+            return b;
         }
 
         //Time Complexity:O(n)
         //Extra Space: O(n)
-        static int FibonacciRecursive(int n)
+        static int NthFibonacciRecursive(int n)
         {
             if (n <= 1)
             {
                 return n;
             }
-            return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
+            return NthFibonacciRecursive(n - 1) + NthFibonacciRecursive(n - 2);
         }
 
         //Time Complexity: O(1)
@@ -51,6 +54,11 @@ namespace Algorithms.General
             double phi = (1 + Math.Sqrt(5)) / 2;
             return (int)Math.Round(Math.Pow(phi, n)
                                    / Math.Sqrt(5));
+        }
+
+        static int SumFibonacci(int n)
+        {
+            return NthFibonacciIterative(n + 2) - 1;
         }
     }
 }
