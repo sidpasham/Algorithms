@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.BST
 {
@@ -39,6 +36,8 @@ namespace Algorithms.BST
             return root;
         }
 
+        #region Traversals
+
         public void InOrderRecursion()
         {
             InOrderRecursion(root);
@@ -50,7 +49,7 @@ namespace Algorithms.BST
 
             InOrderRecursion(root.left);
 
-            Console.WriteLine(root.val);
+            Console.Write(root.val + " ");
 
             InOrderRecursion(root.right);
         }
@@ -72,10 +71,11 @@ namespace Algorithms.BST
                 }
 
                 curr = st.Pop();
-                Console.WriteLine(curr.val);
+                Console.Write(curr.val + " ");
 
                 curr = curr.right;
             }
+
         }
 
         public void PreOrderRecursive()
@@ -87,14 +87,14 @@ namespace Algorithms.BST
         {
             if (root == null) return;
 
-            Console.WriteLine(root.val);
+            Console.Write(root.val + " ");
             PreOrderRecursive(root.left);
             PreOrderRecursive(root.right);
         }
 
         public void PreOrderIterative()
         {
-            if(root == null) return;
+            if (root == null) return;
 
             Stack<BSTNode> st = new Stack<BSTNode>();
 
@@ -103,7 +103,7 @@ namespace Algorithms.BST
             while(st.Count > 0)
             {
                 var node = st.Peek();
-                Console.WriteLine(node.val);
+                Console.Write(node.val + " ");
                 st.Pop();
 
                 if (node.right != null)
@@ -129,10 +129,10 @@ namespace Algorithms.BST
 
             PostOrderRecursive(root.left);
             PostOrderRecursive(root.right);
-            Console.WriteLine(root.val);
+            Console.Write(root.val + " ");
         }
 
-        public void PostOrderIterative(BSTNode root)
+        public void PostOrderIterative()
         {
             if (root == null) return;
 
@@ -158,8 +158,8 @@ namespace Algorithms.BST
 
             while(st2.Count > 0)
             {
-                var node = st1.Pop();
-                Console.WriteLine(node.val);
+                var node = st2.Pop();
+                Console.Write(node.val + " ");
             }
         }
 
@@ -180,10 +180,10 @@ namespace Algorithms.BST
             }
         }
 
-        public void PrintGivenLevel(BSTNode root, int level)
+        void PrintGivenLevel(BSTNode root, int level)
         {
             if (root == null) return;
-            if (level == 1) Console.WriteLine(root.val);
+            if (level == 1) Console.Write(root.val + " ");
 
             if(level > 1)
             {
@@ -192,5 +192,42 @@ namespace Algorithms.BST
             }
 
         }
+
+        public void LevelOrderRecursive()
+        {
+            var height = Height(root);
+
+            for (int i = 0; i <= height; i++)
+            {
+                PrintGivenLevel(root,i);
+            }
+        }
+
+        public void LevelOrderIterative()
+        {
+            if(root == null) return;
+
+            Queue<BSTNode> q = new Queue<BSTNode>();
+
+            q.Enqueue(root);
+
+            while (q.Count > 0)
+            {
+                var temp = q.Dequeue();
+                Console.Write(temp.val + " ");
+
+                if (temp.left != null)
+                {
+                    q.Enqueue(temp.left);
+                }
+
+                if (temp.right != null)
+                {
+                    q.Enqueue(temp.right);
+                }
+            }
+        }
+
+        #endregion
     }
 }

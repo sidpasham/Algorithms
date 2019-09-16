@@ -14,15 +14,15 @@
             int n = arr.Length;
             for (int i = 0; i < n; i++)
             {
-                int mi = i;
+                int min_idx = i;
 
                 for (int j = i + 1; j < n; j++)
                 {
-                    if (arr[j] < arr[mi]) mi = j;
+                    if (arr[j] < arr[min_idx]) min_idx = j;
                 }
 
-                var temp = arr[mi];
-                arr[mi] = arr[i];
+                var temp = arr[min_idx];
+                arr[min_idx] = arr[i];
                 arr[i] = temp;
 
             }

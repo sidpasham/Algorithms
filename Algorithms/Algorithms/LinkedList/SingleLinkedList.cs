@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Algorithms.LinkedList
 {
@@ -10,31 +6,31 @@ namespace Algorithms.LinkedList
     {
         public SLLNode head;
 
-        public void InsertFront(SingleLinkedList sll, int data)
+        public void InsertFront(int data)
         {
             SLLNode node = new SLLNode(data);
-            node.next = sll.head;
-            sll.head = node;
+            node.next = head;
+            head = node;
         }
 
-        public void InsertLast(SingleLinkedList sll, int data)
+        public void InsertLast(int data)
         {
             var newNode = new SLLNode(data);
 
-            if(sll.head == null)
+            if(head == null)
             {
-                sll.head = newNode;
+                head = newNode;
                 return;
             }
 
-            var lastNode = GetLastNode(sll);
+            var lastNode = GetLastNode();
             lastNode.next = newNode;
 
         }
 
-        public SLLNode GetLastNode(SingleLinkedList sll)
+        public SLLNode GetLastNode()
         {
-            var temp = sll.head;
+            var temp = head;
             while(temp.next != null)
             {
                 temp = temp.next;
@@ -42,17 +38,17 @@ namespace Algorithms.LinkedList
             return temp;
         }
 
-        public void DeleteNodeByValue(SingleLinkedList sll, int data)
+        public void DeleteNodeByValue(int data)
         {
-            if(sll.head != null)
+            if(head != null)
             {
-                if(sll.head.data == data)
+                if(head.data == data)
                 {
-                    sll.head = sll.head.next;
+                    head = head.next;
                 }
                 else
                 {
-                    var curr = sll.head;
+                    var curr = head;
                     while(curr.next != null)
                     {
                         if(curr.next.data == data)
@@ -66,16 +62,16 @@ namespace Algorithms.LinkedList
             }
         }
 
-        public void DeleteNodeByPosition(SingleLinkedList sll, int position)
+        public void DeleteNodeByPosition(int position)
         {
-            if(sll.head != null)
+            if(head != null)
             {
                 if (position == 0)
                 {
-                    sll.head = null;
+                    head = null;
                 }
 
-                var temp = sll.head;
+                var temp = head;
 
                 for(int i = 0; i < position - 1 && temp!=null; i++)
                 {
@@ -86,9 +82,9 @@ namespace Algorithms.LinkedList
             }
         }
 
-        public int Length(SingleLinkedList sll)
+        public int Length()
         {
-            var temp = sll.head;
+            var temp = head;
             int count = 0;
             while(temp != null)
             {
@@ -108,10 +104,10 @@ namespace Algorithms.LinkedList
             return 1 + LengthRecursive(node.next);
         }
 
-        public bool IsNodeExitsByValue(SingleLinkedList sll, int data)
+        public bool IsNodeExitsByValue(int data)
         {
-            if (sll == null) return false;
-            var temp = sll.head;
+            if (head == null) return false;
+            var temp = head;
             while(temp != null)
             {
                 if (temp.data == data) return true;
@@ -121,16 +117,16 @@ namespace Algorithms.LinkedList
             return false;
         }
 
-        public SLLNode GetNodeByPosition(SingleLinkedList sll, int position)
+        public SLLNode GetNodeByPosition(int position)
         {
-            if(sll.head != null)
+            if(head != null)
             {
                 if(position == 0)
                 {
-                    return sll.head;
+                    return head;
                 }
 
-                var temp = sll.head;
+                var temp = head;
                 for(int i = 0; i < position - 1 && temp != null; i++)
                 {
                     temp = temp.next;
@@ -141,11 +137,11 @@ namespace Algorithms.LinkedList
             return null;
         }
 
-        public SLLNode GetNodeByValue(SingleLinkedList sll, int data)
+        public SLLNode GetNodeByValue(int data)
         {
-            if (sll.head != null)
+            if (head != null)
             {
-                var temp = sll.head;
+                var temp = head;
                 while(temp != null)
                 {
                     if (temp.data == data) break;
@@ -156,11 +152,11 @@ namespace Algorithms.LinkedList
             return null;
         }
 
-        public void RemoveDuplicatesSorted(SingleLinkedList sll)
+        public void RemoveDuplicatesSorted()
         {
-            if (sll.head == null) return;
+            if (head == null) return;
 
-            var temp = sll.head;
+            var temp = head;
             
             while(temp.next!= null)
             {
@@ -175,10 +171,10 @@ namespace Algorithms.LinkedList
             }
         }
 
-        public void RemoveDuplicates(SingleLinkedList sll)
+        public void RemoveDuplicates()
         {
-            if (sll.head == null) return;
-            var curr = sll.head;
+            if (head == null) return;
+            var curr = head;
             SLLNode prev = null;
             HashSet<int> hs = new HashSet<int>();
             while(curr.next != null)
@@ -197,23 +193,9 @@ namespace Algorithms.LinkedList
             }
         }
 
-        public void Reverse(SingleLinkedList sll)
-        {
-            SLLNode prev = null;
-            SLLNode next = null;
-            SLLNode curr = sll.head;
-            while(curr != null)
-            {
-                next = curr.next;
-                curr.next = prev;
-                prev = curr;
-                curr = next;
-            }
+        
 
-            head = prev;
-        }
-
-        public SLLNode GetMiddleNode(SLLNode head)
+        public SLLNode GetMiddleNode()
         {
             if (head == null) return head;
 
@@ -232,6 +214,7 @@ namespace Algorithms.LinkedList
 
             return slow;
         }
+        
 
         public SLLNode SortedMerge(SLLNode node1, SLLNode node2)
         {
@@ -260,7 +243,7 @@ namespace Algorithms.LinkedList
                 return head;
             }
 
-            SLLNode middle = GetMiddleNode(head);
+            SLLNode middle = GetMiddleNode();
             SLLNode middlenext = middle.next;
 
             middle.next = null;
