@@ -19,6 +19,7 @@ namespace Algorithms.Sorting
         //    Console.WriteLine(string.Join("\t" , arr));
         //}
 
+        //Worst Case - O(n^2)
         static void BubbleSortRecursive(int[] arr, int n)
         {
             //base case
@@ -37,6 +38,9 @@ namespace Algorithms.Sorting
             BubbleSortRecursive(arr, n -1);
         }
 
+        //Worst Case - O(n^2)
+        //Best Case - O(n)
+        //Space - O(1)
         static void BubbleSortIterative(int[] arr, int n)
         {
             bool swaped = false;

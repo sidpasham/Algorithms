@@ -10,12 +10,15 @@ namespace Algorithms.General
     {
         //static void Main()
         //{
-        //    Console.WriteLine(IsPalindrome("abba"));
-        //    Console.WriteLine(IsPalindrome("abbccbba"));
-        //    Console.WriteLine(IsPalindrome("geeks"));
+        //    Console.WriteLine(IsStringPalindrome("abba"));
+        //    Console.WriteLine(IsStringPalindrome("abbccbba"));
+        //    Console.WriteLine(IsStringPalindrome("geeks"));
+
+        //    Console.WriteLine(IsNumberPalindrome(5005));
+        //    Console.WriteLine(IsNumberPalindrome(5006));
         //}
 
-        static bool IsPalindrome(string str)
+        static bool IsStringPalindrome(string str)
         {
             for(int i =0, j= str.Length - 1; i < str.Length / 2; i++,j--)
             {
@@ -26,6 +29,17 @@ namespace Algorithms.General
                 }
             }
             return true;
+        }
+
+        static bool IsNumberPalindrome(int num)
+        {
+            if (num == 0) return true;
+
+            var temp = ReverseNumber.ReverseNumberIterative(num);
+
+            if (temp == num) return true;
+
+            return false;
         }
     }
 }

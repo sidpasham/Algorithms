@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.Strings
 {
@@ -13,11 +9,13 @@ namespace Algorithms.Strings
 
         //}
 
+        //O(nlog(n))
         static bool checkstringperumations(string s1, string s2)
         {
             var char1 = s1.ToLower().ToCharArray();
             var char2 = s2.ToLower().ToCharArray();
 
+            //O(nlog(n))
             Array.Sort(char1);
             Array.Sort(char2);
 
@@ -34,5 +32,8 @@ namespace Algorithms.Strings
             }
 
         }
+
+        //O(n) - Count Chars https://www.geeksforgeeks.org/check-if-two-strings-are-permutation-of-each-other/
+
     }
 }

@@ -42,6 +42,8 @@ namespace Algorithms.Sorting
             return i + 1;
         }
 
+        //Worst Case - O(N^2)
+        //Best and Avg Case - O(nLog(n))
         static void QuickSortRecursive(int[] arr, int start, int end)
         {
             if(start > end) return;

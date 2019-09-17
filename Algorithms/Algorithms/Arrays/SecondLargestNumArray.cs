@@ -9,6 +9,7 @@
         //    Console.WriteLine(output);
         //}
 
+        //O(n)
         static int SecondLargestinArray(int[] arr)
         {
             if (arr.Length < 2) return -1;

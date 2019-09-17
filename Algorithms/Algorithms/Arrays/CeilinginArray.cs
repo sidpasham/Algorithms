@@ -19,6 +19,7 @@ namespace Algorithms.Arrays
         //    }
         //}
 
+        //O(n)
         static int FindCeilinginArray(int[] arr, int start, int end, int x)
         {
             //if the first element is less than the value then return first element
@@ -34,11 +35,13 @@ namespace Algorithms.Arrays
 
         }
 
+        //O(nlogn) 
         static int CeilingMethod2(int[] arr, int x)
         {
             //sort the array
-            Array.Sort(arr);
+            Array.Sort(arr); //O(nlogn) 
 
+            //O(n)
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] == x) return i + 1;
@@ -47,5 +50,7 @@ namespace Algorithms.Arrays
 
             return -1;
         }
+
+        //O(logn) Using Binary Search
     }
 }

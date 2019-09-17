@@ -14,6 +14,7 @@ namespace Algorithms.General
         //    Console.WriteLine($"Factorial of {num} is {FactorialIterative(5)}");
         //}
 
+        //O(n)
         static double FactorialRecursive(int n)
         {
             if (n == 0) return 1;
@@ -21,6 +22,7 @@ namespace Algorithms.General
             return n * FactorialRecursive(n - 1);
         }
 
+        //O(n)
         static double FactorialIterative(int n)
         {
             int fac = 1, i;
