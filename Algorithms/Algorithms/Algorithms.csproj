@@ -61,11 +61,13 @@
     <Compile Include="General\Palindrome.cs" />
     <Compile Include="General\PrimeNumber.cs" />
     <Compile Include="HackerRank\BribeinArray.cs" />
+    <Compile Include="LinkedList\DetectLoop.cs" />
     <Compile Include="LinkedList\ReverseLinkedList.cs" />
     <Compile Include="LinkedList\SingleLinkedList.cs" />
     <Compile Include="LinkedList\SLLNode.cs" />
     <Compile Include="LinkedList\LLImplementation.cs" />
     <Compile Include="Matrix\Traverse2DMatrix.cs" />
+    <Compile Include="Queue\QueueUsingStack.cs" />
     <Compile Include="Searching\BinarySearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\LinearSearch.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="Sorting\MergeSort.cs" />
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
+    <Compile Include="Stack\StackUsingQueue.cs" />
     <Compile Include="Strings\CheckStringPermutation.cs" />
     <Compile Include="Strings\ReplaceBlackValueinString.cs" />
     <Compile Include="Strings\ReverseString.cs" />
