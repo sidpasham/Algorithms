@@ -46,13 +46,17 @@
     <Compile Include="Arrays\CeilinginArray.cs" />
     <Compile Include="Arrays\CountDistinctPairswithDiffK.cs" />
     <Compile Include="Arrays\FloorinArray.cs" />
-    <Compile Include="Arrays\MinDiffinArray.cs" />
+    <Compile Include="Arrays\KthLargestOrSmallest.cs" />
+    <Compile Include="Arrays\Median.cs" />
+    <Compile Include="Arrays\MinDiffPairsArray.cs" />
     <Compile Include="Arrays\ReverseArray.cs" />
     <Compile Include="Arrays\SecondLargestNumArray.cs" />
     <Compile Include="Arrays\SortBinaryArray.cs" />
     <Compile Include="BST\BST.cs" />
     <Compile Include="BST\BSTTraversals.cs" />
     <Compile Include="BST\BSTNode.cs" />
+    <Compile Include="BST\IsIdentical.cs" />
+    <Compile Include="BST\IsSubTree.cs" />
     <Compile Include="BST\TopViewBST.cs" />
     <Compile Include="General\BalancedBrackets.cs" />
     <Compile Include="General\Factorial.cs" />
@@ -60,6 +64,7 @@
     <Compile Include="General\GCD.cs" />
     <Compile Include="General\Palindrome.cs" />
     <Compile Include="General\PrimeNumber.cs" />
+    <Compile Include="General\ReverseNumber.cs" />
     <Compile Include="HackerRank\BribeinArray.cs" />
     <Compile Include="LinkedList\ReverseLinkedList.cs" />
     <Compile Include="LinkedList\SingleLinkedList.cs" />

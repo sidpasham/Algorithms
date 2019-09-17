@@ -12,17 +12,14 @@ namespace Algorithms.Arrays
         //    Console.WriteLine($"Count of pairs with given diff is {count}");
         //}
 
+        //O(nLogn)
         static int countPairsWithDiffK(int[] arr, int k)
         {
             int count = 0;
 
             //sort the array first
-            Array.Sort(arr);
+            Array.Sort(arr); //O(nLogn)
 
-            //remove duplicate elements
-
-
-            //iterative to find the element arr[j] = arr[i] + k using Binary Search
             for (int i = 0; i < arr.Length; i++)
             {
 
@@ -35,7 +32,7 @@ namespace Algorithms.Arrays
             return count;
         }
 
-        //recursive binary search on sorted array
+        //O(nLogn)
         static int BinarySearch(int[] arr, int start, int end, int x)
         {
             if (start <= end)

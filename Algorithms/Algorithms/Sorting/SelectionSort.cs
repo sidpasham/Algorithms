@@ -9,6 +9,7 @@
         //    Console.WriteLine(string.Join("\t",arr));
         //}
 
+        //O(n^2)
         static void SelectionSorting(int[] arr)
         {
             int n = arr.Length;

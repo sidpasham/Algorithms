@@ -15,6 +15,8 @@ namespace Algorithms.Sorting
         //    Console.WriteLine(string.Join("\t",arr));
         //}
 
+        //O(nLog(N))
+        //space = O(n)
         static void Merge(int[] arr, int start, int end, int middle)
         {
             int n1 = middle - start + 1;
@@ -69,6 +71,8 @@ namespace Algorithms.Sorting
 
         }
 
+        //O(nLog(N))
+        //space = O(n)
         static void Sort(int[] arr, int start, int end)
         {
             if (start < end)

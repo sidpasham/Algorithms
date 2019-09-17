@@ -2,23 +2,21 @@
 
 namespace Algorithms.Arrays
 {
-    class MinDiffinArray
+    class MinDiffPairsArray
     {
         //static void Main()
         //{
         //    int[] arr = new int[] { 1, 5, 3, 19, 18, 25 };
-        //    Console.WriteLine($"Minimum difference is {MinDiffPairsArray(arr)}");
+        //    Console.WriteLine($"Minimum difference is {MinDiffPairsInArray(arr)}");
         //}
 
-        static int MinDiffPairsArray(int[] arr)
+        //O(nLog n)
+        static int MinDiffPairsInArray(int[] arr)
         {
-            //iniatize difference to max
             int diff = int.MaxValue;
 
-            //sort the arr
-            Array.Sort(arr);
+            Array.Sort(arr); //O(nlogn)
 
-            //iterate to track min diff
             for (int i = 0; i < arr.Length - 1; i++)
             {
                 if (arr[i + 1] - arr[i] < diff)

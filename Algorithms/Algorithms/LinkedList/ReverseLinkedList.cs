@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.LinkedList
+﻿namespace Algorithms.LinkedList
 {
     class ReverseLinkedList
     {
-        static void Main()
-        {
-            SingleLinkedList sll = new SingleLinkedList();
+        //static void Main()
+        //{
+        //    SingleLinkedList sll = new SingleLinkedList();
 
-            sll.InsertLast(1);
-            sll.InsertLast(2);
-            sll.InsertLast(3);
+        //    sll.InsertLast(1);
+        //    sll.InsertLast(2);
+        //    sll.InsertLast(3);
 
-            sll.head = Reverse(sll.head);
-        }
+        //    sll.head = Reverse(sll.head);
+        //}
 
         static SLLNode Reverse(SLLNode head)
         {
