@@ -5,22 +5,22 @@ namespace Algorithms.LinkedList
 {
     class DetectLoop
     {
-        static void Main()
-        {
-            SingleLinkedList sll = new SingleLinkedList();
+        //static void Main()
+        //{
+        //    SingleLinkedList sll = new SingleLinkedList();
 
-            sll.InsertLast(1);
-            sll.InsertLast(2);
-            sll.InsertLast(3);
-            sll.InsertLast(4);
-            sll.InsertLast(5);
+        //    sll.InsertLast(1);
+        //    sll.InsertLast(2);
+        //    sll.InsertLast(3);
+        //    sll.InsertLast(4);
+        //    sll.InsertLast(5);
 
-            var output = DetectLoopLinkedList(sll.head);
+        //    var output = DetectLoopLinkedList(sll.head);
 
-            var output1 = DetectLoopFloydsCycle(sll.head);
+        //    var output1 = DetectLoopFloydsCycle(sll.head);
 
-            Console.WriteLine(output);
-        }
+        //    Console.WriteLine(output);
+        //}
 
         static bool DetectLoopLinkedList(SLLNode head)
         {

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amazon\Interview1.cs" />
     <Compile Include="Arrays\CeilinginArray.cs" />
     <Compile Include="Arrays\CountDistinctPairswithDiffK.cs" />
     <Compile Include="Arrays\FloorinArray.cs" />

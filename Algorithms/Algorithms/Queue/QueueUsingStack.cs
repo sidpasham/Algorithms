@@ -4,8 +4,8 @@ namespace Algorithms
 {
     class QueueUsingStack
     {
-        Stack s1 = new Stack();
-        Stack s2 = new Stack();
+        System.Collections.Stack s1 = new System.Collections.Stack();
+        System.Collections.Stack s2 = new System.Collections.Stack();
         
         public void Enqueue(int x)
         {
