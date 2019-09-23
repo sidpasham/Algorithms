@@ -9,15 +9,15 @@ namespace Algorithms.BST
 {
     class ArraytoBST
     {
-        static void Main()
-        {
-            BST bst = new BST();
-            int[] arr = new int[]{1,8,6,9,2,3,7,5};
-            InsertArraytoBST(arr, bst);
+        //static void Main()
+        //{
+        //    BST bst = new BST();
+        //    int[] arr = new int[]{1,8,6,9,2,3,7,5};
+        //    InsertArraytoBST(arr, bst);
 
-            bst.InOrderRecursion();
+        //    bst.InOrderRecursion();
 
-        }
+        //}
         static void InsertArraytoBST(int[] arr, BST bst)
         {
             for (int i = 0; i < arr.Length; i++)
