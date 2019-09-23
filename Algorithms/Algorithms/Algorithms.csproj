@@ -50,9 +50,11 @@
     <Compile Include="Arrays\KthLargestOrSmallest.cs" />
     <Compile Include="Arrays\Median.cs" />
     <Compile Include="Arrays\MinDiffPairsArray.cs" />
+    <Compile Include="Arrays\RandomiseArray.cs" />
     <Compile Include="Arrays\ReverseArray.cs" />
     <Compile Include="Arrays\SecondLargestNumArray.cs" />
     <Compile Include="Arrays\SortBinaryArray.cs" />
+    <Compile Include="BST\ArraytoBST.cs" />
     <Compile Include="BST\BST.cs" />
     <Compile Include="BST\BSTTraversals.cs" />
     <Compile Include="BST\BSTNode.cs" />
@@ -67,6 +69,7 @@
     <Compile Include="General\PrimeNumber.cs" />
     <Compile Include="General\ReverseNumber.cs" />
     <Compile Include="HackerRank\BribeinArray.cs" />
+    <Compile Include="HashTable\HashtableAndDictionary.cs" />
     <Compile Include="LinkedList\DetectLoop.cs" />
     <Compile Include="LinkedList\ReverseLinkedList.cs" />
     <Compile Include="LinkedList\SingleLinkedList.cs" />
@@ -82,6 +85,7 @@
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Stack\StackUsingQueue.cs" />
+    <Compile Include="Strings\CheckStringPalindromePermutation.cs" />
     <Compile Include="Strings\CheckStringPermutation.cs" />
     <Compile Include="Strings\ReplaceBlackValueinString.cs" />
     <Compile Include="Strings\ReverseString.cs" />

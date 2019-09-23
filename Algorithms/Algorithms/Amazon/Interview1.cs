@@ -8,10 +8,10 @@ namespace Algorithms.Amazon
 {
     class Interview1
     {
-        static void Main()
-        {
+        //static void Main()
+        //{
 
-        }
+        //}
 
         public static List<string> prioritizedOrders(int numOrders, string[] orderList)
         {
