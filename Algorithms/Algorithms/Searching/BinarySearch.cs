@@ -4,7 +4,7 @@ namespace Algorithms.Searching
 {
     //Algorithmic Paradigm: Decrease and Conquer.
 
-    class BinarySearch
+    public static class BinarySearch
     {
         //static void Main(string[] args)
         //{
