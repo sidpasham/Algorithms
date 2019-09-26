@@ -6,14 +6,45 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Amazon
 {
-    class OptimalUtilization
+    class Interview1
     {
         //static void Main()
         //{
 
         //}
 
-        //O(n^2) Time complexity
+        public static List<string> prioritizedOrders(int numOrders, string[] orderList)
+        {
+            if (numOrders == 0) return null;
+            Dictionary<string, string> oldGenBoxes = new Dictionary<string, string>();
+            Dictionary<string, string> newGenBoxes = new Dictionary<string, string>();
+
+            foreach (string order in orderList)
+            {
+                string[] splitedOrder = order.Split(' ');
+                if (!Int32.TryParse(splitedOrder[1], out int n))
+                {
+                    oldGenBoxes.Add(order, order.Substring(order.IndexOf(' ')));
+                }
+                else
+                {
+                    newGenBoxes.Add(order, order.Substring(order.IndexOf(' ')));
+                }
+            }
+
+            Dictionary<string, string> sortedOldGenBoxes = SortBoxesByValueKey(oldGenBoxes);
+
+            newGenBoxes.ToList().ForEach(x => sortedOldGenBoxes.Add(x.Key, x.Value));
+            return sortedOldGenBoxes.Keys.ToList();
+
+            // WRITE YOUR CODE HERE
+        }
+
+        private static Dictionary<string, string> SortBoxesByValueKey(Dictionary<string, string> Orders)
+        {
+            return Orders.OrderBy(x => x.Value).ThenBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
+        }
+
         public static List<List<int>> optimalUtilization(int maxTravelDist, List<List<int>> forwardRouteList, List<List<int>> returnRouteList)
         {
             if (forwardRouteList.Count == 0 && returnRouteList.Count == 0) return new List<List<int>>();
