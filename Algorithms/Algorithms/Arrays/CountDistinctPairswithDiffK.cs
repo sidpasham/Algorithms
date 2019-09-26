@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Algorithms.Searching;
+using System;
 
 namespace Algorithms.Arrays
 {
@@ -22,7 +23,6 @@ namespace Algorithms.Arrays
 
             for (int i = 0; i < arr.Length; i++)
             {
-
                 if (BinarySearch(arr, i +1, arr.Length - 1, arr[i] + k) != -1)
                 {
                     count++;

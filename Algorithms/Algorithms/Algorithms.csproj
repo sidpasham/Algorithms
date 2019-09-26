@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Amazon\Interview1.cs" />
+    <Compile Include="Amazon\OptimalUtilization.cs" />
+    <Compile Include="Amazon\prioritzeOrders.cs" />
     <Compile Include="Arrays\CeilinginArray.cs" />
     <Compile Include="Arrays\CountDistinctPairswithDiffK.cs" />
     <Compile Include="Arrays\FirstRepeatingElement.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Stack\StackUsingQueue.cs" />
     <Compile Include="Strings\CheckStringPalindromePermutation.cs" />
     <Compile Include="Strings\CheckStringPermutation.cs" />
+    <Compile Include="Strings\FirstNonUniqueChar.cs" />
     <Compile Include="Strings\ReplaceBlackValueinString.cs" />
     <Compile Include="Strings\ReverseString.cs" />
     <Compile Include="Strings\ReverseWords.cs" />
