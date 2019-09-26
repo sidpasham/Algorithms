@@ -5,12 +5,12 @@ namespace Algorithms.Arrays
 {
     class FirstRepeatingElement
     {
-        static void Main()
-        {
-            int[] arr = new int[] {7,9,6,7,6,2,3};
-            var result = FirstRepeatingElementinArray(arr);
-            Console.WriteLine(result);
-        }
+        //static void Main()
+        //{
+        //    int[] arr = new int[] {7,9,6,7,6,2,3};
+        //    var result = FirstRepeatingElementinArray(arr);
+        //    Console.WriteLine(result);
+        //}
 
         static int FirstRepeatingElementinArray(int[] arr)
         {

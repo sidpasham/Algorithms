@@ -80,6 +80,7 @@
     <Compile Include="LinkedList\SingleLinkedList.cs" />
     <Compile Include="LinkedList\SLLNode.cs" />
     <Compile Include="LinkedList\LLImplementation.cs" />
+    <Compile Include="LinkedList\SortedMergeLinkedList.cs" />
     <Compile Include="Matrix\Traverse2DMatrix.cs" />
     <Compile Include="Queue\QueueUsingStack.cs" />
     <Compile Include="Searching\BinarySearch.cs" />
@@ -100,6 +101,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Projects\AkkaNET.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
