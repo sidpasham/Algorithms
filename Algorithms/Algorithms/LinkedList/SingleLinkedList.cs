@@ -214,27 +214,6 @@ namespace Algorithms.LinkedList
 
             return slow;
         }
-        
-
-        public SLLNode SortedMerge(SLLNode node1, SLLNode node2)
-        {
-            if (node1 == null) return node2;
-            if (node2 == null) return node1;
-            SLLNode result = null;
-
-            if(node1.data <= node2.data)
-            {
-                result = node1;
-                result.next = SortedMerge(node1.next, node2);
-            }
-            else
-            {
-                result = node2;
-                result.next = SortedMerge(node1, node2.next);
-            }
-
-            return result;
-        }
 
         public SLLNode MergeSort(SLLNode head)
         {
@@ -252,7 +231,7 @@ namespace Algorithms.LinkedList
 
             SLLNode right = MergeSort(middlenext);
 
-            SLLNode sortedlist = SortedMerge(left, right);
+            SLLNode sortedlist = SortedMergeLinkedList.SortedMergeLinkedListRecursion(left, right);
 
             return sortedlist;
         }
