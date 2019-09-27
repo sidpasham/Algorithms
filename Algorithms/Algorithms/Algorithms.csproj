@@ -76,11 +76,13 @@
     <Compile Include="General\ReverseNumber.cs" />
     <Compile Include="HackerRank\BribeinArray.cs" />
     <Compile Include="HashTable\HashtableAndDictionary.cs" />
+    <Compile Include="LeetCode\LongestCommonPrefix.cs" />
     <Compile Include="LinkedList\DetectLoop.cs" />
     <Compile Include="LinkedList\ReverseLinkedList.cs" />
     <Compile Include="LinkedList\SingleLinkedList.cs" />
     <Compile Include="LinkedList\SLLNode.cs" />
     <Compile Include="LinkedList\LLImplementation.cs" />
+    <Compile Include="LinkedList\RemoveNthNodefromEnd.cs" />
     <Compile Include="LinkedList\SortedMergeLinkedList.cs" />
     <Compile Include="Matrix\Traverse2DMatrix.cs" />
     <Compile Include="Queue\QueueUsingStack.cs" />
@@ -106,5 +108,6 @@
   <ItemGroup>
     <Content Include="Projects\AkkaNET.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
