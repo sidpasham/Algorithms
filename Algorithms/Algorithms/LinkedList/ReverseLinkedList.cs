@@ -13,7 +13,7 @@
         //    sll.head = Reverse(sll.head);
         //}
 
-        static SLLNode Reverse(SLLNode head)
+       public static SLLNode Reverse(SLLNode head)
         {
             SLLNode prev = null;
             SLLNode next = null;
