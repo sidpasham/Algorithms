@@ -61,8 +61,10 @@
     <Compile Include="BST\BST.cs" />
     <Compile Include="BST\BSTTraversals.cs" />
     <Compile Include="BST\BSTNode.cs" />
-    <Compile Include="BST\IsIdentical.cs" />
+    <Compile Include="BST\HeightofBST.cs" />
+    <Compile Include="BST\IsSymmetric.cs" />
     <Compile Include="BST\IsSubTree.cs" />
+    <Compile Include="BST\LevelOrderTraversal.cs" />
     <Compile Include="BST\TopViewBST.cs" />
     <Compile Include="General\AmstrongNumber.cs" />
     <Compile Include="General\BalancedBrackets.cs" />

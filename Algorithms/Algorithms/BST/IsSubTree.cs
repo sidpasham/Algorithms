@@ -13,7 +13,7 @@
 
             if (T == null) return false;
 
-            if (IsIdentical.IsTreesIdenticalRecursive(T, S)) return true;
+            if (IsSymmetric.IsIdenticalRecursive(T, S)) return true;
 
             return CheckIfSubTree(T.left, S) || CheckIfSubTree(T.right, S);
         }
