@@ -78,6 +78,7 @@
     <Compile Include="HashTable\HashtableAndDictionary.cs" />
     <Compile Include="LeetCode\LongestCommonPrefix.cs" />
     <Compile Include="LinkedList\DetectLoop.cs" />
+    <Compile Include="LinkedList\IsPalindromeLinkedList.cs" />
     <Compile Include="LinkedList\ReverseLinkedList.cs" />
     <Compile Include="LinkedList\SingleLinkedList.cs" />
     <Compile Include="LinkedList\SLLNode.cs" />
