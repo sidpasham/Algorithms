@@ -48,7 +48,7 @@ namespace Algorithms.BST
                 if (!dict.ContainsKey(d))
                 {
                     Console.Write(temp.val + " ");
-                    dict.Add(d,temp.val);
+                    if (temp.val != null) dict.Add(d, (int) temp.val);
                 }
 
                 if (temp.left != null)
