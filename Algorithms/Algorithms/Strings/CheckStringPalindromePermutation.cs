@@ -15,6 +15,8 @@ namespace Algorithms.Strings
         //    var output = IsStringPalindromePermutation(str1);
         //}
 
+        //O(n) time complexity
+        //O(1) space
         static bool IsStringPalindromePermutation(string s)
         {
             if (s.Length == 0) return true;

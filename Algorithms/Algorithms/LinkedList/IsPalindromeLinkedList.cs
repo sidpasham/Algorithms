@@ -8,16 +8,16 @@ namespace Algorithms.LinkedList
 {
     class IsPalindromeLinkedList
     {
-        static void Main()
-        {
-            SingleLinkedList sll = new SingleLinkedList();
-            sll.InsertLast(0);
-            sll.InsertLast(0);
+        //static void Main()
+        //{
+        //    SingleLinkedList sll = new SingleLinkedList();
+        //    sll.InsertLast(0);
+        //    sll.InsertLast(0);
 
-            var ispalind = IsPalindrome(sll.head);
+        //    var ispalind = IsPalindrome(sll.head);
 
-            Console.WriteLine();
-        }
+        //    Console.WriteLine();
+        //}
 
         static bool IsPalindrome(SLLNode head)
         {

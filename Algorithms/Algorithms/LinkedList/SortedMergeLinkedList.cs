@@ -4,26 +4,26 @@ namespace Algorithms.LinkedList
 {
     public class SortedMergeLinkedList
     {
-        static void Main()
-        {
-            SingleLinkedList ll1 = new SingleLinkedList();
-            ll1.InsertLast(2);
-            ll1.InsertLast(4);
-            ll1.InsertLast(5);
-            ll1.InsertLast(1);
-            ll1.InsertLast(3);
+        //static void Main()
+        //{
+        //    SingleLinkedList ll1 = new SingleLinkedList();
+        //    ll1.InsertLast(2);
+        //    ll1.InsertLast(4);
+        //    ll1.InsertLast(5);
+        //    ll1.InsertLast(1);
+        //    ll1.InsertLast(3);
 
-            SingleLinkedList ll2 = new SingleLinkedList();
-            ll2.InsertLast(6);
-            ll2.InsertLast(9);
-            ll2.InsertLast(8);
-            ll2.InsertLast(7);
-            ll2.InsertLast(10);
+        //    SingleLinkedList ll2 = new SingleLinkedList();
+        //    ll2.InsertLast(6);
+        //    ll2.InsertLast(9);
+        //    ll2.InsertLast(8);
+        //    ll2.InsertLast(7);
+        //    ll2.InsertLast(10);
 
-            var result = SortedMergeLinkedListRecursion(ll1.head, ll2.head);
+        //    var result = SortedMergeLinkedListRecursion(ll1.head, ll2.head);
 
-            Console.WriteLine("Completed");
-        }
+        //    Console.WriteLine("Completed");
+        //}
 
         public static SLLNode SortedMergeLinkedListRecursion(SLLNode n1, SLLNode n2)
         {

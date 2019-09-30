@@ -27,5 +27,8 @@ namespace Algorithms.Arrays
             return arr[k - 1];
 
         }
+
+        //O(n) solution by optimizing the quick sort
+        //https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/
     }
 }

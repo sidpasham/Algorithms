@@ -6,11 +6,37 @@ namespace Algorithms.Strings
     {
         //static void Main()
         //{
+        //    string s1 = "abcd";
+        //    string s2 = "dbca";
 
+        //    var output = CheckStringPermuationOptimized(s1, s2);
         //}
 
+        //O(n) count the chars in string;
+        static bool CheckStringPermuationOptimized(string s1, string s2)
+        {
+            if (s1.Length != s2.Length) return false;
+
+            int[] count = new int[128];
+
+            for(int i = 0; i< s1.Length; i++)
+            {
+                count[s1[i]]++;
+            }
+
+            for(int j = 0; j < s2.Length; j++)
+            {
+                count[s2[j]]--;
+
+                if (count[s2[j]] < 0) return false;
+            }
+
+            return true;
+
+        }
+
         //O(nlog(n))
-        static bool checkstringperumations(string s1, string s2)
+        static bool CheckStringPermuation(string s1, string s2)
         {
             var char1 = s1.ToLower().ToCharArray();
             var char2 = s2.ToLower().ToCharArray();
@@ -32,8 +58,6 @@ namespace Algorithms.Strings
             }
 
         }
-
-        //O(n) - Count Chars https://www.geeksforgeeks.org/check-if-two-strings-are-permutation-of-each-other/
 
     }
 }
