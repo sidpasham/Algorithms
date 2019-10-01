@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.Arrays
+namespace Algorithms
 {
     class CeilinginArray
     {

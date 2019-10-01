@@ -1,8 +1,7 @@
-﻿using Algorithms.Searching;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithms.Arrays
+namespace Algorithms
 {
     class CountDistinctPairswithDiffK
     {

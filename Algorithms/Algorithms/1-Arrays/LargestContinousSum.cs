@@ -14,6 +14,8 @@ namespace Algorithms.Arrays
         //Kadane's Algo O(n)
         static int LargestContinousSuminArray(int[] arr)
         {
+            if (arr.Length == 0) return 0;
+
             int max = 0;
             int max_curr = 0;
 

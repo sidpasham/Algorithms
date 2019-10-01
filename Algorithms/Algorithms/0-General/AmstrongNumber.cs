@@ -1,6 +1,7 @@
 ﻿using System;
+using Algorithms.General;
 
-namespace Algorithms.General
+namespace Algorithms
 {
     class AmstrongNumber
     {
@@ -11,7 +12,7 @@ namespace Algorithms.General
         //    Console.WriteLine(result);
         //}
 
-        static bool IsAmstrongNumber1(int n)
+        private static bool IsAmstrongNumber1(int n)
         {
             string str = n.ToString();
             var length = str.Length;
@@ -31,7 +32,7 @@ namespace Algorithms.General
             return sum == n;
         }
 
-        static bool IsAmstrongNumber2(int x)
+        private static bool IsAmstrongNumber2(int x)
         {
             var n = OrderofNumber.Order(x);
             int temp = x;

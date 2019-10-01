@@ -33,11 +33,6 @@ namespace Algorithms.BST
             Console.WriteLine();
             bst.PostOrderIterative();
             Console.WriteLine();
-
-            bst.LevelOrderRecursive();
-            Console.WriteLine();
-            bst.LevelOrderIterative();
-            Console.WriteLine();
         }
     }
 }

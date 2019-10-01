@@ -15,6 +15,8 @@ namespace Algorithms.Arrays
         //    Console.WriteLine(string.Join("\t", output2));
         //}
 
+        //O(n) time complexity
+        //O(1) space
         static int[] ReverseArrayIterative(int[] arr)
         {
             int len = arr.Length;
@@ -33,6 +35,8 @@ namespace Algorithms.Arrays
             return arr;
         }
 
+        //O(n) time complexity
+        //O(n) space
         static int[] ReverseArrayIterative2(int[] arr)
         {
             var arr2 = new int[arr.Length];
@@ -46,6 +50,8 @@ namespace Algorithms.Arrays
             return arr2;
         }
 
+        //O(n) time complexity
+        //O(n) space
         static int[] ReverseArrayRecursive(int[] arr, int start, int end)
         {
             if (start >= end)

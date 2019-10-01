@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.Arrays
 {
@@ -17,6 +13,8 @@ namespace Algorithms.Arrays
         //    Console.WriteLine(string.Join("\t", arr));
         //}
 
+        //O(n) time complexity
+        //O(1) space
         static void RandomiseNumbersinArray(int[] arr, int n)
         {
             if(n == 0) return;
