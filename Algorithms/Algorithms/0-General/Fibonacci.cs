@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.General
+namespace Algorithms
 {
     class Fibonacci
     {
@@ -17,8 +17,8 @@ namespace Algorithms.General
         //    Console.ReadLine();
         //}
 
-        //Time Complexity:O(n)
-        //Extra Space: O(1)
+        //O(n) Time Complexity
+        //O(1) Space
         static int NthFibonacciIterative(int n)
         {
             int a = 0;
@@ -36,8 +36,8 @@ namespace Algorithms.General
             return b;
         }
 
-        //Time Complexity:O(n)
-        //Extra Space: O(n)
+        //O(n) Time Complexity
+        //O(n) Space
         static int NthFibonacciRecursive(int n)
         {
             if (n <= 1)
@@ -47,8 +47,8 @@ namespace Algorithms.General
             return NthFibonacciRecursive(n - 1) + NthFibonacciRecursive(n - 2);
         }
 
-        //Time Complexity: O(1)
-        //Space Complexity: O(1)
+        //O(1) Time Complexity
+        //O(1) Space
         static int FibonacciFormula(int n)
         {
             double phi = (1 + Math.Sqrt(5)) / 2;
@@ -56,6 +56,8 @@ namespace Algorithms.General
                                    / Math.Sqrt(5));
         }
 
+        //O(n) time complexity
+        //O(n) space
         static int SumFibonacci(int n)
         {
             return NthFibonacciIterative(n + 2) - 1;

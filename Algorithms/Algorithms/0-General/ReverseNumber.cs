@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 
-namespace Algorithms.General
+namespace Algorithms
 {
     public class ReverseNumber
     {
@@ -11,25 +10,29 @@ namespace Algorithms.General
         //    var output = ReverseNumberIterative(x);
         //}
 
+        //O(log(n)) to base 10 -- time complexity
+        //O(1) space
         public static int ReverseNumberIterative(int num)
         {
-            int rev_num = 0;
+            int rev = 0;
             while (num > 0)
             {
-                rev_num = rev_num * 10 + (num % 10);
+                rev = rev * 10 + (num % 10);
                 num = num / 10;
             }
 
-            return rev_num;
+            return rev;
         }
 
-        public int ReverseNumberRecursive(int num, int temp)
+        //O(log(n)) to base 10 -- time complexity
+        //O(n) space
+        public int ReverseNumberRecursive(int num, int rev)
         {
-            if (num == 0) return temp;
+            if (num == 0) return rev;
 
-            temp = temp * 10 + (num % 10);
+            rev = rev * 10 + (num % 10);
 
-            return ReverseNumberRecursive(num / 10, temp);
+            return ReverseNumberRecursive(num / 10, rev);
         }
     }
 }

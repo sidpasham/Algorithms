@@ -1,4 +1,6 @@
-﻿namespace Algorithms.General
+﻿using System;
+
+namespace Algorithms
 {
     public class OrderofNumber
     {
@@ -9,6 +11,8 @@
         //    Console.WriteLine(result);
         //}
 
+        //O(log(n)) to base 10 time complexity
+        //O(1) space
         public static int Order(long n)
         {
             int order = 0;

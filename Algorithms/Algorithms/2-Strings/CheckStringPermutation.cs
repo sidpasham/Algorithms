@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.Strings
+namespace Algorithms
 {
     class CheckStringPermutation
     {
@@ -35,7 +35,8 @@ namespace Algorithms.Strings
 
         }
 
-        //O(nlog(n))
+        //O(nlog(n)) time complexity
+        //O(n) space
         static bool CheckStringPermuation(string s1, string s2)
         {
             var char1 = s1.ToLower().ToCharArray();

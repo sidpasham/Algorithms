@@ -1,17 +1,18 @@
 ﻿using System.Text;
 
-namespace Algorithms.Strings
+namespace Algorithms
 {
     class ReverseWords
     {
         //static void Main()
         //{
         //    string str = "Hello this is Siddhanth";
-        //    var output = ReverseWordsinString(str);
+        //    var output = ReverseWordsInString(str);
         //    Console.WriteLine(output);
         //}
 
-        static string ReverseWordsinString(string str)
+        //O(n2) time complexity
+        static string ReverseWordsInString(string str)
         {
             int i;
             int start = str.Length - 1;

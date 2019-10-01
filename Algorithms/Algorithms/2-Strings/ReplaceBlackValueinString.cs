@@ -1,16 +1,18 @@
 ﻿using System.Text;
 
-namespace Algorithms.Strings
+namespace Algorithms
 {
     class ReplaceBlackValueinString
     {
         //static void Main()
         //{
         //    var str = "Mr John Smith   ";
-        //    var output = ReplaceBlankwithValue(str.Trim());
+        //    var output = ReplaceBlankWithValue(str.Trim(),"%20");
         //}
 
-        static string ReplaceBlankwithValue(string str)
+        //O(n) time complexity
+        //O(1) space
+        static string ReplaceBlankWithValue(string str, string val)
         {
             var arr = str.ToCharArray();
             var sb = new StringBuilder();
@@ -18,7 +20,7 @@ namespace Algorithms.Strings
             {                
                 if(ch == ' ')
                 {
-                    sb.Append("%20");
+                    sb.Append(val);
                 }
                 else
                 {

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Algorithms.General
+namespace Algorithms
 {
     class BalancedBrackets
     {
@@ -13,6 +12,8 @@ namespace Algorithms.General
         //    Console.WriteLine(output);
         //}
 
+        //O(n) time complexity
+        //O(1) space
         public static bool IsBracketsBalancedWithStackandDictonary(string input)
         {
             Dictionary<char, char> dict = new Dictionary<char, char>() {
@@ -52,6 +53,8 @@ namespace Algorithms.General
             return !st.Any() ? true : false;
         }
 
+        //O(n) time complexity
+        //O(1) space
         static bool IsBracketsBalancedWithStack(string s)
         {
             if (!string.IsNullOrEmpty(s))

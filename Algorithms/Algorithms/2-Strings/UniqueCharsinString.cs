@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Strings
+﻿namespace Algorithms
 {
     class UniqueCharsinString
     {
@@ -12,7 +12,7 @@
         static bool IsUniqueChars(string str)
         {
             var chararr = str.ToCharArray();
-            var arr = new int[256];
+            var arr = new int[128];
 
             foreach (var ch in chararr)
             {
@@ -34,8 +34,7 @@
             {
                 int val = (str[i] - 'a');
 
-                // If bit corresponding to current 
-                // character is already set 
+                // If bit corresponding to current character is already set 
                 if ((checker & (1 << val)) > 0)
                     return false;
 

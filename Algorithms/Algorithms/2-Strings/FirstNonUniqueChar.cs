@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Algorithms.Strings
+namespace Algorithms
 {
     class FirstNonUniqueChar
     {
@@ -15,10 +12,12 @@ namespace Algorithms.Strings
         //    Console.WriteLine();
         //}
 
+        //O(n) time complexity
+        //O(n) space due to storing elements in Dictionary
         static int GetFirstNonUniqueCharinString(string s)
         {
             var arr = s.ToCharArray();
-            Dictionary<char, int> hs = new Dictionary<char, int>();
+            var hs = new Dictionary<char, int>();
             for (int i = 0; i < arr.Length; i++)
             {
                 if (hs.ContainsKey(arr[i]))

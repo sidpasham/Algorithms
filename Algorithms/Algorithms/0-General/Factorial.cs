@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Algorithms.General
+namespace Algorithms
 {
     class Factorial
     {
@@ -14,7 +10,8 @@ namespace Algorithms.General
         //    Console.WriteLine($"Factorial of {num} is {FactorialIterative(5)}");
         //}
 
-        //O(n)
+        //O(n) time complexity
+        //O(n) space because of recursion
         static double FactorialRecursive(int n)
         {
             if (n == 0) return 1;
@@ -22,12 +19,13 @@ namespace Algorithms.General
             return n * FactorialRecursive(n - 1);
         }
 
-        //O(n)
+        //O(n) time complexity
+        //O(1) space
         static double FactorialIterative(int n)
         {
-            int fac = 1, i;
+            double fac = 1;
 
-            for (i = 2; i <= n; i++)
+            for (int i = 2; i <= n; i++)
             {
                 fac *= i;
             }

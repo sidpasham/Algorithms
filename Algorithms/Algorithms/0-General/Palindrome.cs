@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using  System;
 
-namespace Algorithms.General
+namespace Algorithms
 {
     class Palindrome
     {
@@ -18,6 +14,8 @@ namespace Algorithms.General
         //    Console.WriteLine(IsNumberPalindrome(5006));
         //}
 
+        //O(Log(n)) to base 2 time complexity
+        //O(1) space
         static bool IsStringPalindrome(string str)
         {
             for(int i =0, j= str.Length - 1; i < str.Length / 2; i++,j--)
@@ -25,12 +23,13 @@ namespace Algorithms.General
                 if (str[i] != str[j])
                 {
                     return false;
-                    break;
                 }
             }
             return true;
         }
 
+        //O(Log(n)) to base 2 time complexity
+        //O(1) space
         static bool IsNumberPalindrome(int num)
         {
             if (num == 0) return true;

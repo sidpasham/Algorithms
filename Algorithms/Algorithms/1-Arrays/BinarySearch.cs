@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.Searching
+namespace Algorithms
 {
     //Algorithmic Paradigm: Decrease and Conquer.
 

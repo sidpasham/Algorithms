@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Algorithms.Amazon
 {
@@ -29,8 +26,8 @@ namespace Algorithms.Amazon
                 foreach (List<int> b in backwardList)
                 {
                     int forward = f[1];
-                    int backwad = b[1];
-                    int total = (forward + backwad);
+                    int backward = b[1];
+                    int total = (forward + backward);
                     if (total > maxTravelDist)
                         continue;
                     if (total < maxTravelDist)

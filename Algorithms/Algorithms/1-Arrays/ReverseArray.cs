@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.Arrays
+namespace Algorithms
 {
     class ReverseArray
     {
@@ -15,9 +15,22 @@ namespace Algorithms.Arrays
         //    Console.WriteLine(string.Join("\t", output2));
         //}
 
+        //O(Log(n)) time complexity
+        //O(n) space
+        static int[] ReverseArrayIterative(int[] arr)
+        {
+            for (int i = 0, j = arr.Length - 1; i < arr.Length / 2; i++, j--)
+            {
+                arr[i] = arr[j];
+                arr[j] = arr[i];
+            }
+
+            return arr;
+        }
+
         //O(n) time complexity
         //O(1) space
-        static int[] ReverseArrayIterative(int[] arr)
+        public static int[] ReverseArrayIterative2(int[] arr)
         {
             int len = arr.Length;
             int start = 0;
@@ -33,21 +46,6 @@ namespace Algorithms.Arrays
             }
 
             return arr;
-        }
-
-        //O(n) time complexity
-        //O(n) space
-        static int[] ReverseArrayIterative2(int[] arr)
-        {
-            var arr2 = new int[arr.Length];
-            Array.Copy(arr, arr2, arr.Length);
-            for (int i = 0, j = arr.Length - 1; i < arr.Length / 2; i++, j--)
-            {
-                arr2[i] = arr[j];
-                arr2[j] = arr[i];
-            }
-
-            return arr2;
         }
 
         //O(n) time complexity

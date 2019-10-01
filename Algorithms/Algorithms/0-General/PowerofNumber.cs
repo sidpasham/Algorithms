@@ -1,4 +1,5 @@
-﻿namespace Algorithms.General
+﻿using System;
+namespace Algorithms
 {
     public class PowerofNumber
     {
@@ -8,6 +9,8 @@
         //    Console.WriteLine(result);
         //}
 
+        //O(n) time complexity
+        //O(n) space due to recursion
         public static double Power(int a, int b)
         {
             if (b == 0) return 1;

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Algorithms.General
+﻿namespace Algorithms
 {
     class GCD
     {
@@ -11,6 +9,8 @@ namespace Algorithms.General
         //    Console.WriteLine($"GCDEuclidean of {a} and {b} is {GCDEuclideanRecursive(a, b)}");
         //}
 
+        //O(n) time complexity
+        //O(n) space
         static double GCDSimpleRecursive(int a, int b)
         {
             if (a == 0) return b;
@@ -25,7 +25,8 @@ namespace Algorithms.General
 
         }
 
-        //Time Complexity: O(Log min(a, b))
+        //O(Log min(a, b)) time complexity
+        //O(n) space
         static double GCDEuclideanRecursive(int a, int b)
         {
             if (a == 0) return b;
