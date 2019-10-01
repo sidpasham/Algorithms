@@ -1,4 +1,4 @@
-﻿namespace Algorithms.LinkedList
+﻿namespace Algorithms
 {
     class LLImplementation
     {

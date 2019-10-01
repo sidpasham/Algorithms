@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="4-LinkedList\GetMiddleNode.cs" />
+    <Compile Include="4-LinkedList\MergeSortLinkedList.cs" />
+    <Compile Include="4-LinkedList\RemoveDuplicates.cs" />
     <Compile Include="Amazon\OptimalUtilization.cs" />
     <Compile Include="Amazon\prioritzeOrders.cs" />
     <Compile Include="1-Arrays\CeilinginArray.cs" />
@@ -93,7 +96,6 @@
     <Compile Include="4-LinkedList\SLLNode.cs" />
     <Compile Include="4-LinkedList\LLImplementation.cs" />
     <Compile Include="4-LinkedList\RemoveNthNodefromEnd.cs" />
-    <Compile Include="4-LinkedList\SortedMergeLinkedList.cs" />
     <Compile Include="8-Matrix\RotateMatrix.cs" />
     <Compile Include="8-Matrix\Traverse2DMatrix.cs" />
     <Compile Include="7-Queue\QueueUsingStack.cs" />

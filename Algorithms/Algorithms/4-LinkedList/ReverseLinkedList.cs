@@ -1,4 +1,4 @@
-﻿namespace Algorithms.LinkedList
+﻿namespace Algorithms
 {
     class ReverseLinkedList
     {
@@ -13,7 +13,9 @@
         //    sll.head = Reverse(sll.head);
         //}
 
-       public static SLLNode Reverse(SLLNode head)
+        //O(n) time complexity
+        //O(1) space
+        public static SLLNode Reverse(SLLNode head)
         {
             SLLNode prev = null;
             SLLNode next = null;

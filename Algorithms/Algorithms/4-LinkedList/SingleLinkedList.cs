@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Algorithms.LinkedList
+﻿namespace Algorithms
 {
     public class SingleLinkedList
     {
@@ -150,90 +148,6 @@ namespace Algorithms.LinkedList
                 return temp;
             }
             return null;
-        }
-
-        public void RemoveDuplicatesSorted()
-        {
-            if (head == null) return;
-
-            var temp = head;
-            
-            while(temp.next!= null)
-            {
-                if(temp.data == temp.next.data)
-                {
-                    temp.next = temp.next.next;
-                }
-                else
-                {
-                    temp = temp.next;
-                }
-            }
-        }
-
-        public void RemoveDuplicates()
-        {
-            if (head == null) return;
-            var curr = head;
-            SLLNode prev = null;
-            HashSet<int> hs = new HashSet<int>();
-            while(curr.next != null)
-            {
-                int val = curr.data;
-                if (hs.Contains(val))
-                {
-                    prev.next = curr.next;
-                }
-                else
-                {
-                    hs.Add(val);
-                    prev = curr;
-                }
-                curr = curr.next;
-            }
-        }
-
-        
-
-        public SLLNode GetMiddleNode()
-        {
-            if (head == null) return head;
-
-            SLLNode fast = head.next;
-            SLLNode slow = head;
-
-            while(fast != null)
-            {
-                fast = fast.next;
-                if(fast != null)
-                {
-                    fast = fast.next;
-                    slow = slow.next;
-                }
-            }
-
-            return slow;
-        }
-
-        public SLLNode MergeSort(SLLNode head)
-        {
-            if(head == null || head.next == null)
-            {
-                return head;
-            }
-
-            SLLNode middle = GetMiddleNode();
-            SLLNode middlenext = middle.next;
-
-            middle.next = null;
-
-            SLLNode left = MergeSort(head);
-
-            SLLNode right = MergeSort(middlenext);
-
-            SLLNode sortedlist = SortedMergeLinkedList.SortedMergeLinkedListRecursion(left, right);
-
-            return sortedlist;
         }
     }
 }

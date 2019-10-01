@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Algorithms.LinkedList
+namespace Algorithms
 {
     class DetectLoop
     {
@@ -22,6 +21,31 @@ namespace Algorithms.LinkedList
         //    Console.WriteLine(output);
         //}
 
+        //O(n) time complexity
+        //O(1) space due to hashset
+        static bool DetectLoopFloydsCycle(SLLNode head)
+        {
+            if (head == null) return false;
+
+            SLLNode slow = head;
+            SLLNode fast = head;
+
+            while (slow != null && fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+
+                if (slow == fast)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        //O(n) time complexity
+        //O(n) space due to hashset
         static bool DetectLoopLinkedList(SLLNode head)
         {
             if (head == null) return false;
@@ -39,26 +63,6 @@ namespace Algorithms.LinkedList
             }
             return false;
         }
-
-        static bool DetectLoopFloydsCycle(SLLNode head)
-        {
-            if (head == null) return false;
-
-            SLLNode slow = head;
-            SLLNode fast = head;
-
-            while(slow != null && fast != null && fast.next != null)
-            {
-                slow = slow.next;
-                fast = fast.next.next;
-
-                if(slow == fast)
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
+        
     }
 }

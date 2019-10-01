@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Algorithms.LinkedList
+﻿namespace Algorithms
 {
-    public class SortedMergeLinkedList
+    class MergeSortLinkedList
     {
         //static void Main()
         //{
@@ -25,6 +23,31 @@ namespace Algorithms.LinkedList
         //    Console.WriteLine("Completed");
         //}
 
+        //O(nLog(n)) time complexity
+        //O(n) space
+        public SLLNode MergeSort(SLLNode head)
+        {
+            if (head == null || head.next == null)
+            {
+                return head;
+            }
+
+            SLLNode middle = GetMiddleNode.GetMiddleNodeLinkedList(head);
+            SLLNode middlenext = middle.next;
+
+            middle.next = null;
+
+            SLLNode left = MergeSort(head);
+
+            SLLNode right = MergeSort(middlenext);
+
+            SLLNode sortedlist = SortedMergeLinkedListRecursion(left, right);
+
+            return sortedlist;
+        }
+
+        //O(n) time complexity
+        //O(n) space
         public static SLLNode SortedMergeLinkedListRecursion(SLLNode n1, SLLNode n2)
         {
             if (n1 == null) return n2;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.LinkedList
+﻿namespace Algorithms
 {
     class RemoveNthNodefromEnd
     {
@@ -14,27 +8,25 @@ namespace Algorithms.LinkedList
         //    sll.InsertLast(1);
         //    sll.InsertLast(2);
 
-        //    var output = RemoveNthNodeFromEndLinkedList(sll.head, 2);
+        //    var length = sll.Length();
+
+        //    var output = RemoveNthNodeFromEndLinkedList(sll.head, length, 2);
 
         //    Console.WriteLine();
 
         //}
 
-        static SLLNode RemoveNthNodeFromEndLinkedList(SLLNode head, int n)
+        //O(n) time complexity
+        //O(1) space
+        static SLLNode RemoveNthNodeFromEndLinkedList(SLLNode head,int length, int n)
         {
             if (head == null) return null;
+            length = length - n;
+
             SLLNode temp = new SLLNode(0);
             temp.next = head;
-            int length = 0;
-            var curr = head;
-            while (curr != null)
-            {
-                length++;
-                curr = curr.next;
-            }
 
-            length = length - n;
-            curr = temp;
+            var curr = temp;
             while (length > 0)
             {
                 length--;

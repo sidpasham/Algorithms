@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.LinkedList
+﻿namespace Algorithms
 {
     class IsPalindromeLinkedList
     {
@@ -19,34 +13,24 @@ namespace Algorithms.LinkedList
         //    Console.WriteLine();
         //}
 
+        //O(Log(n)) time complexity
+        //O(1) space
         static bool IsPalindrome(SLLNode head)
         {
-            var fast = head;
-            var slow = head;
+            var middle = GetMiddleNode.GetMiddleNodeLinkedList(head);
 
-            while(fast != null && fast.next != null)
+            var half1 = head;
+            var half2 = ReverseLinkedList.Reverse(middle);
+
+            while(half1 != null && half2 != null)
             {
-                fast = fast.next.next;
-                slow = slow.next;
-            }
-
-            if(fast != null)
-            {
-                slow = slow.next;
-            }
-
-            slow = ReverseLinkedList.Reverse(slow);
-            fast = head;
-
-            while(slow != null)
-            {
-                if(fast.data != slow.data)
+                if(half1.data != half2.data)
                 {
                     return false;
                 }
 
-                fast = fast.next;
-                slow = slow.next;
+                half1 = half1.next;
+                half2 = half2.next;
             }
 
             return true;
