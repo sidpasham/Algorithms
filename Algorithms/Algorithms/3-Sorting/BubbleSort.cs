@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting
+﻿namespace Algorithms
 {
     class BubbleSort
     {
@@ -12,7 +12,7 @@
         //    Console.WriteLine(string.Join("\t" , arr));
         //}
 
-        //Worst Case - O(n^2)
+        //Worst Case - O(n^2) due to recursion
         static void BubbleSortRecursive(int[] arr, int n)
         {
             //base case
@@ -22,9 +22,7 @@
             {
                 if (arr[i] > arr[i + 1])
                 {
-                    var temp = arr[i];
-                    arr[i] = arr[i + 1];
-                    arr[i + 1] = temp;
+                    Swap(arr, i, i + 1);
                 }
             }
 
@@ -43,15 +41,20 @@
                 {
                     if (arr[j] > arr[j + 1])
                     {
-                        var temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
+                        Swap(arr, j, j+ 1);
                         swaped = true;
                     }
                 }
 
                 if(swaped == false) break;
             }
+        }
+
+        static void Swap(int[] arr, int i, int j)
+        {
+            var temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
     }
 }

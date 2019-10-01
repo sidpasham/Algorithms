@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Algorithms.Sorting
+﻿namespace Algorithms
 {
     class QuickSort
     {
@@ -18,7 +11,8 @@ namespace Algorithms.Sorting
         //    Console.WriteLine(string.Join("\t",arr));
         //}
 
-        static int partition(int[] arr, int start, int end)
+        //O(n) time complexity
+        static int PartitionAndSort(int[] arr, int start, int end)
         {
             int pivot = arr[end];
 
@@ -35,10 +29,12 @@ namespace Algorithms.Sorting
                 }
             }
 
+            //swap the pivot element
             var temp1 = arr[i + 1];
-            arr[i + 1] = arr[end];
+            arr[i + 1] = pivot;
             arr[end] = temp1;
 
+            //now the pivot element is i + 1
             return i + 1;
         }
 
@@ -48,7 +44,7 @@ namespace Algorithms.Sorting
         {
             if(start > end) return;
 
-            int pi = partition(arr, start, end);
+            int pi = PartitionAndSort(arr, start, end);
 
             QuickSortRecursive(arr,start,pi-1);
 
@@ -56,6 +52,8 @@ namespace Algorithms.Sorting
 
         }
 
+        //Worst Case - O(N^2)
+        //Best and Avg Case - O(nLog(n))
         static void QuickSortIterative(int[] arr, int start, int end)
         {
             int[] st = new int[end - start +1];
@@ -70,7 +68,7 @@ namespace Algorithms.Sorting
                 end = st[top--];
                 start = st[top--];
 
-                int pi = partition(arr, start, end);
+                int pi = PartitionAndSort(arr, start, end);
 
                 if (pi - 1 > start)
                 {
