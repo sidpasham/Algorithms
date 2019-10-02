@@ -118,6 +118,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Design\BuildSocialNetworkApp.txt" />
+    <Content Include="Design\DuplicateURLs.txt" />
+    <Content Include="Design\LatestCache.txt" />
+    <Content Include="Design\ParkingLot.txt" />
     <Content Include="Projects\AkkaNET.txt" />
   </ItemGroup>
   <ItemGroup />

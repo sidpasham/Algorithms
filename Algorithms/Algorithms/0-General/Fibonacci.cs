@@ -36,7 +36,7 @@ namespace Algorithms
             return b;
         }
 
-        //O(n) Time Complexity
+        //O(2^n) Time Complexity
         //O(n) Space
         static int NthFibonacciRecursive(int n)
         {
