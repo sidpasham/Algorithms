@@ -11,9 +11,9 @@ namespace Algorithms
 
         //    for (int i = 0; i < length; i++)
         //    {
-        //        Console.Write("{0} ", FibonacciFormula(i));
+        //        Console.Write("{0} ", NthFibonacciRecursive(i));
         //    }
-        //    Console.WriteLine($"The Nth Fibonacci = {FibonacciFormula(length)}");
+        //    //Console.WriteLine($"The Nth Fibonacci = {FibonacciFormula(length)}");
         //    Console.ReadLine();
         //}
 

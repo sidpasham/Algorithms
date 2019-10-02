@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithms.BST
+namespace Algorithms
 {
     class BSTTraversals
     {
