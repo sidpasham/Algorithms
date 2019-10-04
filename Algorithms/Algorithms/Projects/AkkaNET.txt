@@ -40,7 +40,8 @@ So 6 actors total - 1 coordinator actor to coordinate + 5 actors to execute the 
 Of course, for optimal performance, you'd configure in Akka the maximum number of instances of an actor that you want to have at the same time, 
 based on the resources you have (Cpu, Memory, Disk) for optimal performance.
  
-For example, If you have 1000 files to import, you might not want to have 1000 actors running at the same time and competing for CPU/Memory/Disk... 
+For example, If you have 1000 files to import, you might not want to have 1000 actors running at the same time 
+and competing for CPU/Memory/Disk... 
 If you tell Akka to only have 10 actors of a specific type, then the 1000 files will be imported through the 10 actors and 
 files would be waiting in the queue until there's an actor available to process them.
  

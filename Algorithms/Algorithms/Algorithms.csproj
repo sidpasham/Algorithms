@@ -118,7 +118,7 @@
     <Compile Include="2-Strings\ReplaceBlackValueinString.cs" />
     <Compile Include="2-Strings\ReverseString.cs" />
     <Compile Include="2-Strings\ReverseWords.cs" />
-    <Compile Include="2-Strings\UniqueCharsinString.cs" />
+    <Compile Include="2-Strings\IsUniqueueString.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
