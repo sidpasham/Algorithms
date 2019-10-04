@@ -91,9 +91,10 @@
     <Compile Include="0-General\PowerofNumber.cs" />
     <Compile Include="0-General\PrimeNumber.cs" />
     <Compile Include="0-General\ReverseNumber.cs" />
-    <Compile Include="HackerRank\BribeinArray.cs" />
+    <Compile Include="1-Arrays\BribeinArray.cs" />
     <Compile Include="HashTable\HashtableAndDictionary.cs" />
-    <Compile Include="LeetCode\LongestCommonPrefix.cs" />
+    <Compile Include="2-Strings\LongestSubstring.cs" />
+    <Compile Include="2-Strings\LongestCommonPrefix.cs" />
     <Compile Include="4-SingleLinkedList\DetectLoop.cs" />
     <Compile Include="4-SingleLinkedList\GetNthNodefromLast.cs" />
     <Compile Include="4-SingleLinkedList\IsPalindromeLinkedList.cs" />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Algorithms.HackerRank
+namespace Algorithms
 {
     class BribeinArray
     {
