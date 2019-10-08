@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithms.BST
+namespace Algorithms
 {
     class BSTTraversals
     {

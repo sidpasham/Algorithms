@@ -43,6 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0-General\LRUCache.cs" />
+    <Compile Include="2-Strings\GetAllPermuationofString.cs" />
+    <Compile Include="4-DoubleLinkedList\DLLNode.cs" />
+    <Compile Include="4-SingleLinkedList\GetMiddleNode.cs" />
+    <Compile Include="4-SingleLinkedList\MergeSortLinkedList.cs" />
+    <Compile Include="4-SingleLinkedList\RemoveDuplicates.cs" />
+    <Compile Include="5-BST\GetMinValuefromBST.cs" />
+    <Compile Include="5-BST\SizeofTree.cs" />
+    <Compile Include="9-Graph\Graph.cs" />
     <Compile Include="4-LinkedList\GetMiddleNode.cs" />
     <Compile Include="4-LinkedList\MergeSortLinkedList.cs" />
     <Compile Include="4-LinkedList\RemoveDuplicates.cs" />
@@ -86,17 +95,18 @@
     <Compile Include="0-General\PowerofNumber.cs" />
     <Compile Include="0-General\PrimeNumber.cs" />
     <Compile Include="0-General\ReverseNumber.cs" />
-    <Compile Include="HackerRank\BribeinArray.cs" />
+    <Compile Include="1-Arrays\BribeinArray.cs" />
     <Compile Include="HashTable\HashtableAndDictionary.cs" />
-    <Compile Include="LeetCode\LongestCommonPrefix.cs" />
-    <Compile Include="4-LinkedList\DetectLoop.cs" />
-    <Compile Include="4-LinkedList\GetNthNodefromLast.cs" />
-    <Compile Include="4-LinkedList\IsPalindromeLinkedList.cs" />
-    <Compile Include="4-LinkedList\ReverseLinkedList.cs" />
-    <Compile Include="4-LinkedList\SingleLinkedList.cs" />
-    <Compile Include="4-LinkedList\SLLNode.cs" />
-    <Compile Include="4-LinkedList\LLImplementation.cs" />
-    <Compile Include="4-LinkedList\RemoveNthNodefromEnd.cs" />
+    <Compile Include="2-Strings\LongestSubstring.cs" />
+    <Compile Include="2-Strings\LongestCommonPrefix.cs" />
+    <Compile Include="4-SingleLinkedList\DetectLoop.cs" />
+    <Compile Include="4-SingleLinkedList\GetNthNodefromLast.cs" />
+    <Compile Include="4-SingleLinkedList\IsPalindromeLinkedList.cs" />
+    <Compile Include="4-SingleLinkedList\ReverseLinkedList.cs" />
+    <Compile Include="4-SingleLinkedList\SingleLinkedList.cs" />
+    <Compile Include="4-SingleLinkedList\SLLNode.cs" />
+    <Compile Include="4-SingleLinkedList\LLImplementation.cs" />
+    <Compile Include="4-SingleLinkedList\RemoveNthNodefromEnd.cs" />
     <Compile Include="8-Matrix\RotateMatrix.cs" />
     <Compile Include="8-Matrix\Traverse2DMatrix.cs" />
     <Compile Include="7-Queue\QueueUsingStack.cs" />
@@ -113,6 +123,7 @@
     <Compile Include="2-Strings\ReplaceBlackValueinString.cs" />
     <Compile Include="2-Strings\ReverseString.cs" />
     <Compile Include="2-Strings\ReverseWords.cs" />
+    <Compile Include="2-Strings\IsUniqueueString.cs" />
     <Compile Include="2-Strings\UniqueCharsinString.cs" />
     <Compile Include="Tesla\Tesla.cs" />
   </ItemGroup>
@@ -120,6 +131,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Design\BuildSocialNetworkApp.txt" />
+    <Content Include="Design\DuplicateURLs.txt" />
+    <Content Include="Design\LatestCache.txt" />
+    <Content Include="Design\ParkingLot.txt" />
     <Content Include="Projects\AkkaNET.txt" />
     <Content Include="Projects\CloudComputing.txt" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.BST
+﻿namespace Algorithms
 {
     class ArraytoBST
     {
