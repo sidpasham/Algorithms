@@ -52,9 +52,6 @@
     <Compile Include="5-BST\GetMinValuefromBST.cs" />
     <Compile Include="5-BST\SizeofTree.cs" />
     <Compile Include="9-Graph\Graph.cs" />
-    <Compile Include="4-LinkedList\GetMiddleNode.cs" />
-    <Compile Include="4-LinkedList\MergeSortLinkedList.cs" />
-    <Compile Include="4-LinkedList\RemoveDuplicates.cs" />
     <Compile Include="5-BT\ArraytoBT.cs" />
     <Compile Include="Amazon\OptimalUtilization.cs" />
     <Compile Include="Amazon\prioritzeOrders.cs" />
@@ -96,7 +93,6 @@
     <Compile Include="0-General\PrimeNumber.cs" />
     <Compile Include="0-General\ReverseNumber.cs" />
     <Compile Include="1-Arrays\BribeinArray.cs" />
-    <Compile Include="HashTable\HashtableAndDictionary.cs" />
     <Compile Include="2-Strings\LongestSubstring.cs" />
     <Compile Include="2-Strings\LongestCommonPrefix.cs" />
     <Compile Include="4-SingleLinkedList\DetectLoop.cs" />
@@ -135,8 +131,7 @@
     <Content Include="Design\DuplicateURLs.txt" />
     <Content Include="Design\LatestCache.txt" />
     <Content Include="Design\ParkingLot.txt" />
-    <Content Include="Projects\AkkaNET.txt" />
-    <Content Include="Projects\CloudComputing.txt" />
+    <Content Include="Design\AkkaNET.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
