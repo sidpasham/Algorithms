@@ -11,6 +11,9 @@
         //    bst.InOrderRecursion();
 
         //}
+
+        //O(n) time complexity
+        //O(1) space
         static void InsertArraytoBST(int[] arr, BST bst)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -19,6 +22,9 @@
             }
         }
 
+
+        //O(n) time complexity
+        //O(n) space
         static BSTNode SortedArraytoBST(int[] arr, int start, int end)
         {
             if(start > end) return null;

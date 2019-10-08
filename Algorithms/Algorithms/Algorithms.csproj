@@ -46,6 +46,7 @@
     <Compile Include="4-LinkedList\GetMiddleNode.cs" />
     <Compile Include="4-LinkedList\MergeSortLinkedList.cs" />
     <Compile Include="4-LinkedList\RemoveDuplicates.cs" />
+    <Compile Include="5-BT\ArraytoBT.cs" />
     <Compile Include="Amazon\OptimalUtilization.cs" />
     <Compile Include="Amazon\prioritzeOrders.cs" />
     <Compile Include="1-Arrays\CeilinginArray.cs" />
@@ -113,12 +114,14 @@
     <Compile Include="2-Strings\ReverseString.cs" />
     <Compile Include="2-Strings\ReverseWords.cs" />
     <Compile Include="2-Strings\UniqueCharsinString.cs" />
+    <Compile Include="Tesla\Tesla.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Projects\AkkaNET.txt" />
+    <Content Include="Projects\CloudComputing.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
