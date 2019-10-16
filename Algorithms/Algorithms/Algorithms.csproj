@@ -120,7 +120,6 @@
     <Compile Include="2-Strings\ReverseString.cs" />
     <Compile Include="2-Strings\ReverseWords.cs" />
     <Compile Include="2-Strings\IsUniqueueString.cs" />
-    <Compile Include="2-Strings\UniqueCharsinString.cs" />
     <Compile Include="Tesla\Tesla.cs" />
   </ItemGroup>
   <ItemGroup>

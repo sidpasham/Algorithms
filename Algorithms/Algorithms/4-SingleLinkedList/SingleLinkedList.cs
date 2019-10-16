@@ -4,6 +4,8 @@
     {
         public SLLNode head;
 
+        //O(1) time complexity
+        //O(1) space
         public void InsertFront(int data)
         {
             SLLNode node = new SLLNode(data);
@@ -11,6 +13,8 @@
             head = node;
         }
 
+        //O(n) time complexity
+        //O(1) space
         public void InsertLast(int data)
         {
             var newNode = new SLLNode(data);
@@ -26,6 +30,8 @@
 
         }
 
+        //O(n) time complexity
+        //O(1) space
         public SLLNode GetLastNode()
         {
             var temp = head;
@@ -36,6 +42,8 @@
             return temp;
         }
 
+        //O(n) time complexity
+        //O(1) space
         public void DeleteNodeByValue(int data)
         {
             if(head != null)
@@ -60,6 +68,8 @@
             }
         }
 
+        //O(n) time complexity where n is the position
+        //O(1) space
         public void DeleteNodeByPosition(int position)
         {
             if(head != null)
@@ -80,6 +90,8 @@
             }
         }
 
+        //O(n) time complexity
+        //O(1) space
         public int Length()
         {
             var temp = head;
@@ -92,6 +104,8 @@
             return count;
         }
 
+        //O(n) time complexity
+        //O(n) space
         public int LengthRecursive(SLLNode node)
         {
             if(node == null)
@@ -102,6 +116,8 @@
             return 1 + LengthRecursive(node.next);
         }
 
+        //O(n) time complexity
+        //O(1) space
         public bool IsNodeExitsByValue(int data)
         {
             if (head == null) return false;
@@ -115,6 +131,8 @@
             return false;
         }
 
+        //O(n) time complexity where n is the position
+        //O(1) space
         public SLLNode GetNodeByPosition(int position)
         {
             if(head != null)
@@ -135,6 +153,8 @@
             return null;
         }
 
+        //O(n) time complexity
+        //O(1) space
         public SLLNode GetNodeByValue(int data)
         {
             if (head != null)

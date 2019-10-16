@@ -7,7 +7,7 @@ namespace Algorithms.Tesla
     {
         //static void Main()
         //{
-        //    string S = "discuss";
+        //    string S = "example";
         //    var output = UniqueOccurences(S);
 
         //    //string S = "011100";
