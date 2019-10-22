@@ -49,8 +49,10 @@
     <Compile Include="4-SingleLinkedList\GetMiddleNode.cs" />
     <Compile Include="4-SingleLinkedList\MergeSortLinkedList.cs" />
     <Compile Include="4-SingleLinkedList\RemoveDuplicates.cs" />
+    <Compile Include="4-SingleLinkedList\RotateLinkedList.cs" />
     <Compile Include="5-BST\GetMinValuefromBST.cs" />
     <Compile Include="5-BST\SizeofTree.cs" />
+    <Compile Include="8-Matrix\FindElementInMatrix.cs" />
     <Compile Include="9-Graph\Graph.cs" />
     <Compile Include="5-BT\ArraytoBT.cs" />
     <Compile Include="Amazon\OptimalUtilization.cs" />
