@@ -11,15 +11,6 @@ namespace Algorithms
         //}
 
         //O(n) time complexity
-        //O(n) space because of recursion
-        static double FactorialRecursive(int n)
-        {
-            if (n == 0) return 1;
-
-            return n * FactorialRecursive(n - 1);
-        }
-
-        //O(n) time complexity
         //O(1) space
         static double FactorialIterative(int n)
         {
@@ -31,6 +22,15 @@ namespace Algorithms
             }
 
             return fac;
+        }
+
+        //O(n) time complexity
+        //O(n) space because of recursion
+        static double FactorialRecursive(int n)
+        {
+            if (n == 0) return 1;
+
+            return n * FactorialRecursive(n - 1);
         }
     }
 }

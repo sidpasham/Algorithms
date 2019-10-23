@@ -6,18 +6,18 @@ namespace Algorithms
     {
         //static void Main()
         //{
-        //    long num = 12345678912365;
+        //    double num = -123456789.2365;
         //    var result = Order(num);
         //    Console.WriteLine(result);
         //}
 
         //O(log(n)) to base 10 time complexity
         //O(1) space
-        public static int Order(long n)
+        public static int Order(double n)
         {
             int order = 0;
-            long temp = n;
-            while (temp != 0)
+            double temp = n;
+            while (Math.Abs(temp) > 1)
             {
                 order++;
                 temp = temp / 10;

@@ -5,18 +5,24 @@ namespace Algorithms
     {
         //static void Main()
         //{
-        //    var result = Power(10, 5);
+        //    var result = Power(5, 3);
         //    Console.WriteLine(result);
         //}
 
         //O(n) time complexity
         //O(n) space due to recursion
-        public static double Power(int a, int b)
+        public static double Power(int a, int n)
         {
-            if (b == 0) return 1;
-            if (b % 2 == 0)
-                return Power(a, b / 2) * Power(a, b / 2);
-            return a * Power(a, b / 2) * Power(a, b / 2);
+            if (n == 0) return 1;
+            if (n == 1) return a;
+            if (n % 2 == 0)
+            {
+                return Power(a, n / 2) * Power(a, n / 2);
+            }
+            else
+            {
+                return a * Power(a, n / 2) * Power(a, n / 2);
+            }
         }
     }
 

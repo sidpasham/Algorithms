@@ -9,6 +9,14 @@
         //    Console.WriteLine($"GCDEuclidean of {a} and {b} is {GCDEuclideanRecursive(a, b)}");
         //}
 
+        //O(Log min(a, b)) time complexity
+        //O(n) space
+        static double GCDEuclideanRecursive(int a, int b)
+        {
+            if (a == 0) return b;
+            return GCDEuclideanRecursive(b % a, a);
+        }
+
         //O(n) time complexity
         //O(n) space
         static double GCDSimpleRecursive(int a, int b)
@@ -23,14 +31,6 @@
 
             return GCDSimpleRecursive(a, b - a);
 
-        }
-
-        //O(Log min(a, b)) time complexity
-        //O(n) space
-        static double GCDEuclideanRecursive(int a, int b)
-        {
-            if (a == 0) return b;
-            return GCDEuclideanRecursive(b % a, a);
         }
     }
 }

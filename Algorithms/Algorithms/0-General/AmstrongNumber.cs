@@ -20,6 +20,22 @@ namespace Algorithms
         //    Console.WriteLine(result);
         //}
 
+        //O(n) time complexity
+        private static bool IsAmstrongNumber2(int x)
+        {
+            var n = OrderofNumber.Order(x);
+            int temp = x;
+            double sum = 0;
+            while (temp != 0)
+            {
+                int r = temp % 10;
+                sum += PowerofNumber.Power(r, n);
+                temp = temp / 10;
+            }
+
+            return sum == x;
+        }
+
         //O(n) time complexity with string changes
         private static bool IsAmstrongNumber1(int n)
         {
@@ -39,22 +55,6 @@ namespace Algorithms
             }
 
             return sum == n;
-        }
-
-        //O(n) time complexity
-        private static bool IsAmstrongNumber2(int x)
-        {
-            var n = OrderofNumber.Order(x);
-            int temp = x;
-            double sum = 0;
-            while (temp != 0)
-            {
-                int r = temp % 10;
-                sum += PowerofNumber.Power(r, n);
-                temp = temp / 10;
-            }
-
-            return sum == x;
         }
     }
 }
