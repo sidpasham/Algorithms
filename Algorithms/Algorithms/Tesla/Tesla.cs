@@ -5,15 +5,15 @@ namespace Algorithms.Tesla
 {
     class Tesla
     {
-        //static void Main()
-        //{
-        //    string S = "discuss";
-        //    var output = UniqueOccurences(S);
+        static void Main()
+        {
+            string S = "ccaaffddecee";
+            var output = UniqueOccurences(S);
 
-        //    //string S = "011100";
-        //    //var output1 = StepsValuetoZero(S);
-        //    Console.WriteLine();
-        //}
+            string S1 = "011100";
+            var output1 = StepsValuetoZero(S1);
+            Console.WriteLine();
+        }
 
         static int UniqueOccurences(string S)
         {
@@ -42,19 +42,14 @@ namespace Algorithms.Tesla
                     }
                     else
                     {
-                        for(int j = 1; j <= count[i]; j++)
+                        if (hs.Contains(count[i] - 1))
                         {
-                            if(hs.Contains(count[i] - j))
-                            {
-                                max = max + count[i];
-                                break;
-                            }
-                            else
-                            {
-                                hs.Add(count[i] - j);
-                                max = max + j;
-                                break;
-                            }
+                            max = max + count[i];
+                        }
+                        else
+                        {
+                            hs.Add(count[i] - 1);
+                            max = max + 1;
                         }
                     }
                 }
@@ -67,7 +62,8 @@ namespace Algorithms.Tesla
         {
             if (string.IsNullOrEmpty(S)) return 0;
 
-            var value = Convert.ToInt32(S, 2);
+            //var value = Convert.ToInt32(S, 2);
+            var value = ConvertBinaryStringToInt(S);
             int count = 0;
 
             while (value > 0)
@@ -84,6 +80,22 @@ namespace Algorithms.Tesla
                 count++;
             }
             return count;
+        }
+
+        static int ConvertBinaryStringToInt(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return 0;
+
+            int dec = 0;
+            int base2 = 1;
+
+            for(int i = s.Length - 1; i >= 0; i--)
+            {
+                if (s[i] == '1') dec = dec + base2;
+                base2 = base2 * 2;
+            }
+
+            return dec;
         }
     }
 }
