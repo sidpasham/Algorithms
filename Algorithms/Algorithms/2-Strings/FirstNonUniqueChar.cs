@@ -22,7 +22,7 @@ namespace Algorithms
             {
                 if (hs.ContainsKey(arr[i]))
                 {
-                    hs[arr[i]] = hs[arr[i]]+1;
+                    hs[arr[i]]++;
                 }
                 else
                 {

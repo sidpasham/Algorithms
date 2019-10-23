@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0-General\ClockAngleProblem.cs" />
     <Compile Include="0-General\LRUCache.cs" />
     <Compile Include="2-Strings\GetAllPermuationofString.cs" />
     <Compile Include="4-DoubleLinkedList\DLLNode.cs" />
