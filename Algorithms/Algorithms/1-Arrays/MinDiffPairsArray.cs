@@ -10,7 +10,7 @@ namespace Algorithms.Arrays
         //    Console.WriteLine($"Minimum difference is {MinDiffPairsInArray(arr)}");
         //}
 
-        //O(nLog n)
+        //O(nLog n) time complexity
         static int MinDiffPairsInArray(int[] arr)
         {
             int diff = int.MaxValue;

@@ -14,7 +14,8 @@ namespace Algorithms
         //    Console.WriteLine($"Count of pairs with given diff is {count}");
         //}
 
-        //O(n) with Hashtable
+        //O(n) time complexity with Hashtable
+        //O(n) space due to hashset saving the array values
         static int CountPairsWithDiffKOptimized(int[] arr, int k)
         {
             int count = 0;
@@ -40,7 +41,7 @@ namespace Algorithms
 
         }
 
-        //O(nLogn)
+        //O(nLogn) time complexity due to sorting
         static int CountPairsWithDiffK(int[] arr, int k)
         {
             int count = 0;
@@ -50,37 +51,13 @@ namespace Algorithms
 
             for (int i = 0; i < arr.Length; i++)
             {
-                if (BinarySearch(arr, i +1, arr.Length - 1, arr[i] + k) != -1)
+                if (BinarySearch.RecursiveBinarySearch(arr, i +1, arr.Length - 1, arr[i] + k) != -1)
                 {
                     count++;
                 }
             }
 
             return count;
-        }
-
-        //O(Logn)
-        static int BinarySearch(int[] arr, int start, int end, int x)
-        {
-            if (start <= end)
-            {
-                int mid = start + (end - start) / 2;
-
-                if (arr[mid] == x)
-                {
-                    return mid;
-                }
-
-                if (x > arr[mid])
-                {
-                    return BinarySearch(arr, mid + 1, end, x);
-                }
-                else
-                {
-                    return BinarySearch(arr, start, mid - 1,x);
-                }
-            }
-            return -1;
-        }
+        }        
     }
 }

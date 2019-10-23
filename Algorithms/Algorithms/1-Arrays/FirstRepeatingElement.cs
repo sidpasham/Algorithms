@@ -12,7 +12,8 @@ namespace Algorithms.Arrays
         //    Console.WriteLine(result);
         //}
 
-        //O(n) with hashtable
+        //O(n) time complexity with hashtable
+        //O(n) space complexity
         static int FirstRepeatingElementinArray(int[] arr)
         {
             int min_idx = -1;
