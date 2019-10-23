@@ -16,6 +16,30 @@
 
         //}
 
+        static SLLNode RemoveNthNodeFromEndLinkedList(SLLNode head, int n)
+        {
+            if (head == null) return null;
+            var fast = head;
+            var slow = head;
+
+            while (n > 0 && fast != null)
+            {
+                fast = fast.next;
+                n--;
+            }
+
+            while (fast != null)
+            {
+                slow = slow.next;
+                fast = fast.next;
+            }
+
+            slow = slow.next;
+
+            return head;
+
+        }
+
         //O(n) time complexity
         //O(1) space
         static SLLNode RemoveNthNodeFromEndLinkedList(SLLNode head,int length, int n)
