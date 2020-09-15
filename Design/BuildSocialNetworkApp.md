@@ -2,7 +2,7 @@
 
 Graph --> By treating each person as node and edge between nodes indicating the two users are frnds
 
-If I wanted a path between two frnds, start with one person and do BFS for graph. for optimisation we can do bi-directional BFS on graph. 
+If I wanted a path between two frnds, start with one person and do BFS for graph. for optimisation we can do bi-directional BFS on graph.
 this means one searches from the source and another searches from the destination, when searches collide we know that the we have found the path.
 
 Class and functions:
@@ -15,22 +15,28 @@ Class Person --> with all person IDs
 Class BFSData --> Queue --> tovisit
 				  Dictionary --> visited
 
-Function-> Find Bi-Directional BFS (Dictionary People, int source, int destination)
-			while(not source.isFinished and not dest.isFinished)
-		
-				search from source for each level
-					if search found then merge paths
+Function : Find Bi-Directional BFS (Dictionary People, int source, int destination)
+```
+	while(not source.isFinished and not dest.isFinished)
 
-				search from destination for reach level
-					if search found then merge paths
+	search from source for each level
+		if search found then merge paths
 
-Function -> searching at each level(ictionary People, BFSData primary, BFSData secondary)	
-				get count as primary size
-				for each primary level
-					get person id and check if secondary contains that ID
-						if contains then return the person
+	search from destination for reach level
+		if search found then merge paths
+```
 
-					add frnds to the queue
+Function:
+* searching at each level(ictionary People, BFSData primary, BFSData secondary)
+* get count as primary size
+```
+for each primary level
+	get person id and check if secondary contains that ID
+		if contains then return the person
+
+		add frnds to the queue
+```
+
 
 
 Bi-Directinal BFS is generally fast than traditional BFS, but we need to know about the source and destination nodes
