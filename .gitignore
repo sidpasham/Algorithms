@@ -2,7 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Algos
+/.vs
 /Algos/CSharp/.vs/Algorithms
 /Algos/bin/Debug/net8.0
 /Algos/obj
